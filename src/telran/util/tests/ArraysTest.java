@@ -11,6 +11,8 @@ import java.util.Comparator;
 
 import org.junit.jupiter.api.Test;
 
+import telran.util.EvenOddComparator;
+
 public class ArraysTest {
 	Integer[] numbers = { 10, 5, -5, 100, 200 };
 	String[] strings = { "lmn", "a", "ab", "abc", "b", "ba" };
