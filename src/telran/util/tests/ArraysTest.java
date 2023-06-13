@@ -28,8 +28,8 @@ public class ArraysTest {
 	@Test
 	void insertObjectTest() {
 		Integer[] expectedLast = { 10, 5, -5, 100, 200, 50 };
-		Integer[] expectedFirst = { 50, 10, 5, -5, 100, 200 };
-		Integer[] expectedMiddle = { 10, 5, 50, -5, 100, 200 };
+//		Integer[] expectedFirst = { 50, 10, 5, -5, 100, 200 };
+//		Integer[] expectedMiddle = { 10, 5, 50, -5, 100, 200 };
 		assertArrayEquals(expectedLast, insertObject(numbers, 5, 50));
 
 	}
