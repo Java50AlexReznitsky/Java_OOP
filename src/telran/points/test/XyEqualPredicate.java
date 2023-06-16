@@ -8,7 +8,6 @@ public class XyEqualPredicate implements Predicate<Point> {
 
 	@Override
 	public boolean test(Point t) {
-		// TODO Auto-generated method stub
 		return t.getX() == t.getY();
 	}
 
