@@ -75,7 +75,7 @@ public class ArraysTest {
 //			
 //		});                                   /* lambda closure*/
 		
-		bubbleSort(array,ArraysTest::compare); // Method reference
+		bubbleSort(array,ArraysTest::compare); // Method reference (the compare method must be static)
 //		bubbleSort(array,this::compare); // Method reference
 		
 		assertArrayEquals(expected, array);
