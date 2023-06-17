@@ -47,14 +47,10 @@ public class Employee implements Comparable<Employee> {
 		return e.id == id;
 
 	}
-//	@Override
-//	public boolean equals(Object emplObj) {
-//		return ((Employee)emplObj).id == id;
-//	}
 
 	@Override
 	public int compareTo(Employee empl) {
 		return id - empl.id;
 	}
-	
+
 }

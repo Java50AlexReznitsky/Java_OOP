@@ -7,7 +7,6 @@ public class BirthYearPredicate implements Predicate<Employee> {
 	int yearTo;
 
 	public BirthYearPredicate(int yearFrom, int yearTo) {
-		super();
 		this.yearFrom = yearFrom;
 		this.yearTo = yearTo;
 	}
