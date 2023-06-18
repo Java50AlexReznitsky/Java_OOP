@@ -15,11 +15,7 @@ class CalculatorTest {
 	void test() {
 		BinaryOperator<Double> bo = (a, b) -> a + b;
 		assertEquals(30, bo.apply(10.0, 20.0));
-//		DoubleBinaryOperator[] operators = new DoubleBinaryOperator[4];
-//		operators[0] = (a, b) -> a + b;
-//		operators[1] = (a, b) -> a - b;
-//		operators[2] = (a, b) -> a * b;
-//		operators[3] = (a, b) -> a / b;
+		
 		DoubleBinaryOperator[] operators = {
 				(a, b) -> a + b,
 				(a, b) -> a - b,
@@ -35,7 +31,7 @@ class CalculatorTest {
 	}
 	@Test 
 	void calculateTest() {
-		assertEquals(20,Calculator.calculate(new CalcData(40, 20, '-')));
+		assertEquals(2,Calculator.calculate(new CalcData(40, 20, '/')));
 	}
 interface DoubleBinaryOperator extends BinaryOperator<Double>{
 	
