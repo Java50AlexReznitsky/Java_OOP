@@ -1,5 +1,7 @@
 package telran.shapes;
 
-public class Shape {
+public interface Shape {
+	int perimeter();
 
+	int square();
 }
