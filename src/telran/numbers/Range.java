@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
 public class Range implements Iterable<Integer> {
 	private int minInclusive;
 	private int maxExclusive;
+	private int[] removedNumbers = new int[0];
 
 	private class RangeIterator implements Iterator<Integer> {
 		int current = minInclusive;
@@ -41,6 +42,10 @@ public class Range implements Iterable<Integer> {
 
 	public int[] toArray() {
 		int[]res = new int[length()];
+		int index = 0;
+		for(int num:this) {
+			res[index++] = num;
+		}
 		return res;
 	}
 

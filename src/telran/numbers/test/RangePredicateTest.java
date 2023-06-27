@@ -33,6 +33,7 @@ class RangePredicateTest {
 	void iteratorTest() {
 		range.setPredicate(predicateOdd);
 		Iterator<Integer> itOdd = range.iterator();
+		
 		range.setPredicate(predicateEven);
 		Iterator<Integer> itEven = range.iterator();
 
